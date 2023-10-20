@@ -10,6 +10,61 @@ We start by importing necessary Python libraries, including pandas, seaborn, num
 
 We read the dataset from a CSV file called 'KNN_Project_Data' into a pandas DataFrame. The first few rows of the DataFrame are displayed to give an initial glimpse of the data.
 
+# Heart Disease Prediction
+
+This repository contains data analysis and machine learning models for predicting heart disease based on a dataset with patient health attributes. The project uses classification models, including K-Nearest Neighbors (KNN), to predict the presence or absence of heart disease.
+
+## Data Overview
+
+The dataset consists of 303 patient records with the following attributes:
+- `age`: Age of the patient
+- `sex`: Gender (0 for female, 1 for male)
+- `cp`: Chest pain type
+- `trestbps`: Resting blood pressure
+- `chol`: Serum cholesterol level
+- `fbs`: Fasting blood sugar (1 if > 120 mg/dl, 0 otherwise)
+- `restecg`: Resting electrocardiographic results
+- `thalach`: Maximum heart rate achieved
+- `exang`: Exercise-induced angina (1 for yes, 0 for no)
+- `oldpeak`: ST depression induced by exercise relative to rest
+- `slope`: Slope of the peak exercise ST segment
+- `ca`: Number of major vessels (0-3) colored by fluoroscopy
+- `thal`: Thalassemia type
+- `target`: Presence of heart disease (1 for yes, 0 for no)
+
+## Data Insights
+
+- The dataset contains 303 records with no missing values.
+- Data types include integers and floats, suitable for machine learning.
+- Descriptive statistics reveal central tendency and variability.
+- A correlation matrix highlights the relationships between features, with `cp` showing a strong positive correlation with heart disease.
+- Visualizations, such as a heatmap and histograms, provide insights into data distributions.
+
+## Model Development and Results
+
+### K-Nearest Neighbors (KNN) Model
+
+- The KNN model was trained and evaluated using cross-validation.
+- The optimal number of neighbors (K) was determined.
+- Cross-validation accuracy: ~0.6933.
+- Test set accuracy: ~0.623.
+- Sample test cases demonstrate the model's ability to predict heart disease likelihood based on input features.
+
+## Conclusion
+
+This project offers insights into heart disease prediction using data analysis and a K-Nearest Neighbors classification model. The model shows reasonable accuracy, but further optimization and evaluation are possible. Additional metrics, feature engineering, and model selection can enhance predictive performance.
+
+For more details and code, please refer to the Jupyter Notebook or Python script in this repository.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+We acknowledge the source of the heart disease dataset and the tools and libraries used for this analysis and modeling.
+
+
 ## Exploratory Data Analysis (EDA)
 
 Exploratory Data Analysis is performed using seaborn to create a pairplot. The 'TARGET CLASS' column is used as the hue, allowing us to visualize relationships between features and the target class.
