@@ -50,19 +50,7 @@ The dataset consists of 303 patient records with the following attributes:
 - Test set accuracy: ~0.623.
 - Sample test cases demonstrate the model's ability to predict heart disease likelihood based on input features.
 
-## Conclusion
 
-This project offers insights into heart disease prediction using data analysis and a K-Nearest Neighbors classification model. The model shows reasonable accuracy, but further optimization and evaluation are possible. Additional metrics, feature engineering, and model selection can enhance predictive performance.
-
-For more details and code, please refer to the Jupyter Notebook or Python script in this repository.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-We acknowledge the source of the heart disease dataset and the tools and libraries used for this analysis and modeling.
 
 
 ## Exploratory Data Analysis (EDA)
@@ -94,3 +82,9 @@ The optimal K value for the KNN model is determined using the elbow method. A fo
 The KNN model is retrained with the selected K value. A new confusion matrix and classification report are created to evaluate the model's performance with the chosen K value.
 
 This project is a practical exercise in data preprocessing, model training, and evaluation using the KNN algorithm. The code and explanations provided guide you through each step of the project.
+
+## Conclusion
+
+This project offers insights into heart disease prediction using data analysis and a K-Nearest Neighbors classification model. The model shows reasonable accuracy, but further optimization and evaluation are possible. Additional metrics, feature engineering, and model selection can enhance predictive performance.
+
+For more details and code, please refer to the Jupyter Notebook or Python script in this repository.
