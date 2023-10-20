@@ -62,6 +62,21 @@ In this project, the KNN model is utilized to predict the presence or absence of
 
 4. **Optimal K Value Selection**: To improve the model's accuracy, the optimal number of neighbors (K) is determined using the elbow method. This process helps select the most suitable K value for the KNN algorithm.
 
+## Using K Nearest Neighbors (KNN)
+
+We employ the K Nearest Neighbors (KNN) algorithm for classification. In this project, the specific features 'cp' (Chest Pain Type), 'thalach' (Maximum Heart Rate Achieved), and 'slope' (Slope of the Peak Exercise ST Segment) are used to predict the likelihood of heart disease presence based on these attributes. Here's how these features are utilized in the KNN model:
+
+- **Chest Pain Type (cp)**: The 'cp' feature represents the type of chest pain experienced by the patient. This variable contains categorical values (0, 1, 2, 3) indicating different types of chest pain. The KNN model uses this information to find patterns in the relationship between chest pain type and heart disease.
+
+- **Maximum Heart Rate Achieved (thalach)**: 'thalach' signifies the maximum heart rate achieved during a patient's exercise stress test. This feature provides insights into the patient's cardiovascular response to exercise. The KNN model considers the maximum heart rate achieved as a key factor in heart disease prediction.
+
+- **Slope of the Peak Exercise ST Segment (slope)**: The 'slope' feature describes the slope of the peak exercise ST segment on an electrocardiogram. This variable reflects how the ST segment changes during peak exercise. The KNN algorithm takes into account this information to assess its impact on the likelihood of heart disease.
+
+The KNN model analyzes the relationships between these features and the target variable ('target': 1 for presence of heart disease, 0 for absence) by considering the values of these features in the dataset. The classification process is based on the similarity of the features of the unknown data points (e.g., 'test1' and 'test2') to the features of the known data points in the training set. Once the model has been trained, it can make predictions about the presence or absence of heart disease for new cases based on these three features.
+
+This project provides a practical example of using KNN to predict heart disease and demonstrates how specific features like 'cp,' 'thalach,' and 'slope' can play a crucial role in making these predictions.
+
+
 ## How KNN Helps
 
 The K-Nearest Neighbors (KNN) algorithm is a powerful tool for classification tasks, such as heart disease prediction in this project. Here's how KNN contributes to this use case:
